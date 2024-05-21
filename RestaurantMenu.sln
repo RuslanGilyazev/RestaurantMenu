@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu.Api", "RestaurantMenu.Api\RestaurantMenu.Api.csproj", "{D35DD67C-CDD1-4A1F-BB86-1F05229BD227}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu.Services", "RestaurantMenu.Services\RestaurantMenu.Services.csproj", "{88B4AF6B-BED9-4E5A-A89C-D9200FFFAB7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu.DataBase", "RestaurantMenu.DataBase\RestaurantMenu.DataBase.csproj", "{F32522B4-450D-4659-A92F-4C4C184F8701}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu.Database.Postgres", "RestaurantMenu.Database.Postgres\RestaurantMenu.Database.Postgres.csproj", "{72EEE285-9522-4ABB-8E96-66C861C3818C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu.Api.Contracts", "RestaurantMenu.Api.Contracts\RestaurantMenu.Api.Contracts.csproj", "{C93F69A0-432D-4BCD-AB83-88F5A81D9A71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7DDED2FF-92D0-40FF-B9B5-FD15D6BCD213}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D35DD67C-CDD1-4A1F-BB86-1F05229BD227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D35DD67C-CDD1-4A1F-BB86-1F05229BD227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D35DD67C-CDD1-4A1F-BB86-1F05229BD227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D35DD67C-CDD1-4A1F-BB86-1F05229BD227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88B4AF6B-BED9-4E5A-A89C-D9200FFFAB7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B4AF6B-BED9-4E5A-A89C-D9200FFFAB7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B4AF6B-BED9-4E5A-A89C-D9200FFFAB7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B4AF6B-BED9-4E5A-A89C-D9200FFFAB7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F32522B4-450D-4659-A92F-4C4C184F8701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F32522B4-450D-4659-A92F-4C4C184F8701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F32522B4-450D-4659-A92F-4C4C184F8701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F32522B4-450D-4659-A92F-4C4C184F8701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72EEE285-9522-4ABB-8E96-66C861C3818C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72EEE285-9522-4ABB-8E96-66C861C3818C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72EEE285-9522-4ABB-8E96-66C861C3818C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72EEE285-9522-4ABB-8E96-66C861C3818C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C93F69A0-432D-4BCD-AB83-88F5A81D9A71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C93F69A0-432D-4BCD-AB83-88F5A81D9A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C93F69A0-432D-4BCD-AB83-88F5A81D9A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C93F69A0-432D-4BCD-AB83-88F5A81D9A71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
