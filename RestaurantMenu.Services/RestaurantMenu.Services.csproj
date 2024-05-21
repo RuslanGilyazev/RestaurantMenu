@@ -6,4 +6,19 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\RestaurantMenu.DataBase\RestaurantMenu.Database.csproj" />
+    <ProjectReference Include="..\RestaurantMenu\RestaurantMenu.csproj" />
+  </ItemGroup>
+
+
+
+
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+  </ItemGroup>
+
 </Project>

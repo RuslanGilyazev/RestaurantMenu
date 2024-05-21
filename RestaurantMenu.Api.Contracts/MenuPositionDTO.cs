@@ -1,6 +1,6 @@
 ﻿namespace RestaurantMenu.Api.Contracts;
 
-public class MenuPosition
+public class MenuPositionDTO
 {
     public Guid Id { get; set; }
 }

@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu.Api", "Resta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu.Services", "RestaurantMenu.Services\RestaurantMenu.Services.csproj", "{88B4AF6B-BED9-4E5A-A89C-D9200FFFAB7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu.DataBase", "RestaurantMenu.DataBase\RestaurantMenu.DataBase.csproj", "{F32522B4-450D-4659-A92F-4C4C184F8701}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu.Database", "RestaurantMenu.DataBase\RestaurantMenu.Database.csproj", "{F32522B4-450D-4659-A92F-4C4C184F8701}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu.Database.Postgres", "RestaurantMenu.Database.Postgres\RestaurantMenu.Database.Postgres.csproj", "{72EEE285-9522-4ABB-8E96-66C861C3818C}"
 EndProject
@@ -14,6 +14,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu.Database.Memory", "RestaurantMenu.Database.Memory\RestaurantMenu.Database.Memory.csproj", "{0639BC52-B528-4321-8B29-375791DC38C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu", "RestaurantMenu\RestaurantMenu.csproj", "{C733D906-5A18-4291-9B43-5E0DBF873451}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,5 +45,13 @@ Global
 		{C93F69A0-432D-4BCD-AB83-88F5A81D9A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C93F69A0-432D-4BCD-AB83-88F5A81D9A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C93F69A0-432D-4BCD-AB83-88F5A81D9A71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0639BC52-B528-4321-8B29-375791DC38C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0639BC52-B528-4321-8B29-375791DC38C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0639BC52-B528-4321-8B29-375791DC38C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0639BC52-B528-4321-8B29-375791DC38C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C733D906-5A18-4291-9B43-5E0DBF873451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C733D906-5A18-4291-9B43-5E0DBF873451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C733D906-5A18-4291-9B43-5E0DBF873451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C733D906-5A18-4291-9B43-5E0DBF873451}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -8,7 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Asp.Versioning.Mvc" Version="8.1.0" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <PackageReference Include="Mapster.DependencyInjection" Version="1.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.4"/>
+    <PackageReference Include="Serilog" Version="3.1.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.1" />
   </ItemGroup>
 
@@ -21,6 +27,14 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RestaurantMenu.Api.Contracts\RestaurantMenu.Api.Contracts.csproj" />
+    <ProjectReference Include="..\RestaurantMenu.Database.Memory\RestaurantMenu.Database.Memory.csproj" />
+    <ProjectReference Include="..\RestaurantMenu.Services\RestaurantMenu.Services.csproj" />
   </ItemGroup>
+
+
+
+
+
+
 
 </Project>

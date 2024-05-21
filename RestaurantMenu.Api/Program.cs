@@ -1,18 +1,29 @@
+using RestaurantMenu.Api.Extensions;
+using RestaurantMenu.Database.Memory.Extensions;
+using RestaurantMenu.Services.Extensions;
+using Serilog;
+
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .CreateLogger();
+
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services
+    .AddApiVersioning(options => options.ReportApiVersions = true).Services
+    .ConfigureApiMapping()
+    .AddControllers().Services
+    .AddSwaggerGen()
+    .AddRestaurantServices()
+    .AddRestaurantMemoryDatabaseServices()
+    .AddSerilog();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
+app.UseSwagger();
+app.UseSwaggerUI();
 app.MapControllers();
 app.UseHttpsRedirection();
+app.UseSerilogRequestLogging();
+
 app.Run();
