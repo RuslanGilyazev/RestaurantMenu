@@ -1,4 +1,4 @@
-# .NET CRUD Application Demo - RestaurantMenu
+# .NET 8 - CRUD Application Demo - Restaurant Menu
 
 This repository contains a demonstration of a simple CRUD (Create, Read, Update, Delete) application showcasing basic functionalities. The project includes logging, validation, and test coverage. The application is built using .NET 8 and Entity Framework.
 
