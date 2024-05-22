@@ -1,6 +1,6 @@
 # .NET 8 - CRUD Application Demo - Restaurant Menu
 
-This repository contains a demonstration of a simple CRUD (Create, Read, Update, Delete) application showcasing basic functionalities. The project includes logging, validation, and test coverage. The application is built using .NET 8 and Entity Framework.
+This repository contains a demonstration of a simple CRUD (Create, Read, Update, Delete) application showcasing basic functionalities. The project includes logging, validation, and test coverage. The application is built using .NET 8.
 
 ## Features
 
@@ -19,11 +19,18 @@ This repository contains a demonstration of a simple CRUD (Create, Read, Update,
 - **Docker**: Containerization for easy deployment.
 - **Docker Compose**: Orchestration for multi-container Docker applications.
 
+## Architecture
+
+This application follows the Domain-Driven Design (DDD) approach to structure the code. DDD helps in managing complexity by dividing the system into distinct layers and bounded contexts. The main layers in this project are:
+
+- **Domain Layer**: Contains the core business logic and domain entities.
+- **Application Layer**: Contains the application services that coordinate the domain logic.
+- **Infrastructure Layer**: Contains data access logic, repositories, and other infrastructure-related services.
+- **Presentation Layer**: Contains the API controllers that handle HTTP requests.
+
 ## Getting Started
 
 ### Prerequisites
-
-- .NET 8 SDK: [Download and install .NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - Docker: [Download and install Docker](https://www.docker.com/get-started)
 - Docker Compose: [Download and install Docker Compose](https://docs.docker.com/compose/install/)
 
