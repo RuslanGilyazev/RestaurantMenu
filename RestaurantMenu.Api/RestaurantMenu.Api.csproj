@@ -35,14 +35,10 @@
     <ProjectReference Include="..\RestaurantMenu.Database.Memory\RestaurantMenu.Database.Memory.csproj" />
     <ProjectReference Include="..\RestaurantMenu.Database.Postgres\RestaurantMenu.Database.Postgres.csproj" />
     <ProjectReference Include="..\RestaurantMenu.Services\RestaurantMenu.Services.csproj" />
-
-
   </ItemGroup>
 
 
-
-
-
-
-
+  <ItemGroup>
+    <InternalsVisibleTo Include="$(AssemblyName).Tests" />
+  </ItemGroup>
 </Project>

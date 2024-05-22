@@ -24,13 +24,13 @@ public class RestaurantController(IRestaurantService restaurantService) : Contro
         await restaurantService.Update(id, restaurant);
     }
 
-    [HttpGet]
+    [HttpGet("{id:guid}")]
     public async Task<RestaurantDTO> Get(Guid id) =>
         (await restaurantService.Get(id)).Adapt<RestaurantDTO>();
 
     [HttpGet("all")]
     public async Task<List<RestaurantDTO>> GetAll() => (await restaurantService.Get()).Adapt<List<RestaurantDTO>>();
 
-    [HttpDelete]
+    [HttpDelete("{id:guid}")]
     public async Task Delete(Guid id) => await restaurantService.Delete(id);
 }

@@ -23,7 +23,7 @@ builder.Services
     .AddRestaurantPostgresDatabase(builder.Configuration)
     .AddSerilog();
 
-if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "postgres")
+if (EnvironmentExtensions.IsPostgresEnvironment())
 {
     builder.Services.AddRestaurantPostgresDatabase(builder.Configuration);
 }
@@ -33,6 +33,11 @@ else
 }
 
 var app = builder.Build();
+
+if (EnvironmentExtensions.IsPostgresEnvironment())
+{
+    app.Migrate();
+}
 
 app.UseSwagger();
 app.UseSwaggerUI();
