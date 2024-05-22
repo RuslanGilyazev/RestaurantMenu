@@ -13,6 +13,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7DDED2FF-92D0-40FF-B9B5-FD15D6BCD213}"
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
+		Readme.md = Readme.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu.Database.Memory", "RestaurantMenu.Database.Memory\RestaurantMenu.Database.Memory.csproj", "{0639BC52-B528-4321-8B29-375791DC38C6}"
