@@ -2,9 +2,9 @@
 using RestaurantMenu.Database.Abstractions;
 using RestaurantMenu.Database.Exceptions;
 
-namespace RestaurantMenu.Database.Memory;
+namespace RestaurantMenu.Database.Memory.Repositories;
 
-public class RestaurantRepository : IRestaurantRepository
+public class RestaurantMemoryRepository : IRestaurantRepository
 {
     private readonly ConcurrentDictionary<Guid, Restaurant> _restaurantDictionary = new();
     
@@ -22,8 +22,8 @@ public class RestaurantRepository : IRestaurantRepository
 
     public async Task<List<Restaurant>> Get() => await Task.FromResult(_restaurantDictionary.Values.ToList());
     
-    public async Task Update(Restaurant restaurant) => 
-        _restaurantDictionary.TryUpdate(restaurant.Id, restaurant, await Get(restaurant.Id));
+    public async Task Update(Guid id, Restaurant restaurant) => 
+        _restaurantDictionary.TryUpdate(id, restaurant, await Get(id));
 
     public async Task Delete(Guid id) => _restaurantDictionary.TryRemove((await Get(id)).Id, out _);
 }

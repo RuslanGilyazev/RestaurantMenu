@@ -1,11 +1,12 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using RestaurantMenu.Database.Abstractions;
+using RestaurantMenu.Database.Memory.Repositories;
 
 namespace RestaurantMenu.Database.Memory.Extensions;
 
 public static class ServiceCollectionRegistrationExtensions
 {
-    public static IServiceCollection AddRestaurantMemoryDatabaseServices(this IServiceCollection services) => 
+    public static IServiceCollection AddRestaurantMemoryDatabase(this IServiceCollection services) => 
         services
-            .AddSingleton<IRestaurantRepository, RestaurantRepository>();
+            .AddSingleton<IRestaurantRepository, RestaurantMemoryRepository>();
 }

@@ -13,12 +13,16 @@ namespace RestaurantMenu.Api.Controllers;
 public class RestaurantController(IRestaurantService restaurantService) : ControllerBase
 {
     [HttpPost]
-    public async Task Create(CreateRestaurantDTO restaurantDto) =>
+    public async Task<Guid> Create(CreateRestaurantDTO restaurantDto) =>
         await restaurantService.Create(restaurantDto.Adapt<Restaurant>());
 
-    [HttpPatch]
-    public async Task Update(UpdateRestaurantDTO restaurantDto) =>
-        await restaurantService.Update(restaurantDto.Adapt<Restaurant>());
+    [HttpPatch("{id:guid}")]
+    public async Task Update(Guid id, UpdateRestaurantDTO restaurantDto)
+    {
+        var restaurant = restaurantDto.Adapt<Restaurant>();
+        restaurant.Id = id;
+        await restaurantService.Update(id, restaurant);
+    }
 
     [HttpGet]
     public async Task<RestaurantDTO> Get(Guid id) =>

@@ -12,6 +12,10 @@
     <PackageReference Include="Mapster" Version="7.4.0" />
     <PackageReference Include="Mapster.DependencyInjection" Version="1.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.4"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Serilog" Version="3.1.1" />
     <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
     <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
@@ -29,6 +33,7 @@
     <ProjectReference Include="..\RestaurantMenu.Api.Contracts\RestaurantMenu.Api.Contracts.csproj" />
     <ProjectReference Include="..\RestaurantMenu.Api.Validations\RestaurantMenu.Api.Validations.csproj" />
     <ProjectReference Include="..\RestaurantMenu.Database.Memory\RestaurantMenu.Database.Memory.csproj" />
+    <ProjectReference Include="..\RestaurantMenu.Database.Postgres\RestaurantMenu.Database.Postgres.csproj" />
     <ProjectReference Include="..\RestaurantMenu.Services\RestaurantMenu.Services.csproj" />
 
 

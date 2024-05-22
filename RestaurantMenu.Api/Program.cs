@@ -2,6 +2,7 @@ using RestaurantMenu.Api.Extensions;
 using RestaurantMenu.Api.Filters;
 using RestaurantMenu.Api.Validations.Extensions;
 using RestaurantMenu.Database.Memory.Extensions;
+using RestaurantMenu.Database.Postgres.Extensions;
 using RestaurantMenu.Services.Extensions;
 using Serilog;
 
@@ -19,8 +20,17 @@ builder.Services
     .AddRestaurantApiValidators()
     .AddSwaggerGen()
     .AddRestaurantServices()
-    .AddRestaurantMemoryDatabaseServices()
+    .AddRestaurantPostgresDatabase(builder.Configuration)
     .AddSerilog();
+
+if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "postgres")
+{
+    builder.Services.AddRestaurantPostgresDatabase(builder.Configuration);
+}
+else
+{
+    builder.Services.AddRestaurantMemoryDatabase();
+}
 
 var app = builder.Build();
 
