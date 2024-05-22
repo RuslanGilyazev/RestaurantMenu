@@ -1,4 +1,6 @@
 using RestaurantMenu.Api.Extensions;
+using RestaurantMenu.Api.Filters;
+using RestaurantMenu.Api.Validations.Extensions;
 using RestaurantMenu.Database.Memory.Extensions;
 using RestaurantMenu.Services.Extensions;
 using Serilog;
@@ -12,7 +14,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services
     .AddApiVersioning(options => options.ReportApiVersions = true).Services
     .ConfigureApiMapping()
-    .AddControllers().Services
+    .AddControllers(options => 
+        options.Filters.Add<NotFoundExceptionFilter>()).Services
+    .AddRestaurantApiValidators()
     .AddSwaggerGen()
     .AddRestaurantServices()
     .AddRestaurantMemoryDatabaseServices()

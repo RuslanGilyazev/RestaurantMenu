@@ -7,4 +7,8 @@ public interface IRestaurantService
     Task<Restaurant?> Get(Guid id);
     
     Task<List<Restaurant>> Get();
+    
+    Task Update(Restaurant restaurant);
+    
+    Task Delete(Guid id);
 }

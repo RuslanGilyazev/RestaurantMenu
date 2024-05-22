@@ -27,8 +27,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RestaurantMenu.Api.Contracts\RestaurantMenu.Api.Contracts.csproj" />
+    <ProjectReference Include="..\RestaurantMenu.Api.Validations\RestaurantMenu.Api.Validations.csproj" />
     <ProjectReference Include="..\RestaurantMenu.Database.Memory\RestaurantMenu.Database.Memory.csproj" />
     <ProjectReference Include="..\RestaurantMenu.Services\RestaurantMenu.Services.csproj" />
+
+
   </ItemGroup>
 
 

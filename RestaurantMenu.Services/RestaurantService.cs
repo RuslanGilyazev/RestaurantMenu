@@ -10,4 +10,8 @@ public class RestaurantService(IRestaurantRepository restaurantRepository) : IRe
     public async Task<Restaurant?> Get(Guid id) => await restaurantRepository.Get(id);
 
     public async Task<List<Restaurant>> Get() => await restaurantRepository.Get();
+    
+    public async Task Update(Restaurant restaurant) => await restaurantRepository.Update(restaurant);
+
+    public async Task Delete(Guid id) => await restaurantRepository.Delete(id);
 }

@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu.Database.Mem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu", "RestaurantMenu\RestaurantMenu.csproj", "{C733D906-5A18-4291-9B43-5E0DBF873451}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu.Api.Validations", "RestaurantMenu.Api.Validations\RestaurantMenu.Api.Validations.csproj", "{8FC792FC-3454-4B81-A09E-BD97F0CADE8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,5 +55,9 @@ Global
 		{C733D906-5A18-4291-9B43-5E0DBF873451}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C733D906-5A18-4291-9B43-5E0DBF873451}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C733D906-5A18-4291-9B43-5E0DBF873451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FC792FC-3454-4B81-A09E-BD97F0CADE8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC792FC-3454-4B81-A09E-BD97F0CADE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC792FC-3454-4B81-A09E-BD97F0CADE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC792FC-3454-4B81-A09E-BD97F0CADE8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
